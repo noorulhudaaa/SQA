@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lightupwithnoor | For the love of cakes </title>
+    <link rel="stylesheet" href="style.css">
+    <!-- link for icons -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"> -->
+
+    <!-- FOR FONT EPHESIS -->
+    <link href="https://fonts.googleapis.com/css2?family=Ephesis&display=swap" rel="stylesheet">
+    <!-- FOR ICONS -->
+    <!-- <script src="https://kit.fontawesome.com/ff73eeec41.js" crossorigin="anonymous"></script> -->
+    <script src="https://kit.fontawesome.com/afca14cf0f.js" crossorigin="anonymous"></script>
+    <style>
+        body{
+            padding: 0px;
+            /* padding-bottom:500px ; */
+            margin: 0px;
+            height: auto;
+            background-image: url('img/bg2.jpg');
+            background-blend-mode: overlay;
+
+            background-repeat: no-repeat;
+            background-size: cover;
+           
+           
+            /* background-color: #e47ab9; */
+        }
+        .navbar{
+            background-color: #f7eeee;
+            height: 50px;
+        }
+        .navbar ul{
+            overflow: auto;
+        }
+
+        .navbar  li{
+            float: left;
+            list-style: none;
+            text-align: center;
+            margin: 10px;
+        }
+
+        .navbar li a{
+            font-size: 18px;
+            font-style: oblique;
+            font-weight: bold;
+            padding: 15px 20px; /*t-r-b-l*/
+            text-decoration: none;
+            color: rgb(233, 12, 122);
+        }
+        .navbar li a:hover{
+            color: rgb(143, 112, 46);
+            
+        }
+        .search{
+            float: right;
+            padding: 8px 8px;
+            margin: 5px 25px;
+            /* border:2px solid rgb(233, 12, 122) */
+        }
+        .navbar input{
+            
+        }
+        .logo{
+            width: 70px;
+            height: 70px;
+        }
+
+        .footer{
+            /* width: 1100px; */
+            /* display: block; */
+            margin: auto;
+        }
+        .footer1{
+            float:left;
+            width: 40%;
+            text-align: left;
+
+        }
+        .footer2{
+            float: right;
+            width: 40%;
+            text-align: right;
+        }
+        footer{
+           
+            width: 100%;
+            height: 50px;
+            position: fixed;
+            bottom: -8%;
+            margin-bottom: 5%;
+            /* z-index: -5; */
+            /* background-color: rgb(189, 26, 107);
+             */
+             background-color:  #f0cdcd; 
+             text-align: center;
+            
+
+            /* clear: both; */
+        }
+
+        .icon{
+          display: inline-block;
+          height: 20px;
+          width: 20px;
+          text-align: center;
+          border-radius: 50px;
+          background-color: white;
+          border:2px solid rgb(255, 255, 255);
+          
+          box-sizing: border-box;
+          transition: all 0.3s ease-out;
+          text-decoration: none;
+
+        }
+       
+        .wrapper .button .icon i{
+            font-size: 18px;
+            line-height: 10px;
+        }
+        .but1{
+            text-align: center;
+            margin-left: 10px;
+        }
+        footer li{
+
+            float: left;
+            list-style: none;
+            text-align: center;
+            font-size: 12px;
+            font-style: oblique;
+            font-weight: bold;
+             /* padding: 15px 20px; t-r-b-l  */
+            text-decoration: none;
+            color: rgb(233, 12, 122);
+            margin-top: -2.5px;
+            
+        }
+        footer li a{
+            font-size: 12px;
+            font-style: oblique;
+            font-weight: bold;
+            /*padding: 2px 15px;*/ /*t-r-b-l*/
+            padding-left: -5px;
+            padding-right: 40px;
+            text-decoration: none;
+            color: rgb(233, 12, 122);
+        }
+       
+        footer li .but1 :hover{
+            color: rgb(243, 26, 189);
+        }
+
+        footer li .but2 :hover{
+            color: #ff0000;
+        }
+
+        footer li .but3 :hover{
+            color: rgb(49, 146, 54);;
+        }
+        footer li .but1{
+            padding-left: 500px;
+        }
+        .iconn{
+            display: inline-block;
+          height: 20px;
+          width: 20px;
+          text-align: center;
+          border-radius: 50px;
+          background-color: #f7eeee;
+          /* border:2px solid rgb(255, 255, 255); */
+          box-sizing: border-box;
+          transition: all 0.3s ease-out;
+          text-decoration: none;
+        }
+       
+
+    </style>
+</head>
+<body>
+    <audio src=""></audio>
+    <header>
+        
+        <!-- NAVIGATION BAR  -->
+        <nav class="navbar" id="imp">
+            <ul>
+                <li id="logo">~Lightupwithnoor🧁~</li>
+                <!-- <li id="cupcake">🧁</li> -->
+
+                <!-- ICONS INCLUDED (currently not working) -->
+                <li id="one"><a href="http://127.0.0.1:5500/web.html"  >home</a> 
+                <!-- <li id="one"><a href="http://127.0.0.1:5500/lab2/web.html"  >home</a>  -->
+               
+
+              <!-- SUBMENU1  (not working currently)--> 
+                <div class="submenu1">
+                    <ul>
+                        <li><a href="#">cupcakes</a></li>
+                        <li><a href="#">birthday cakes</a></li>
+                        <li><a href="#">other</a></li>
+                    </ul>
+                </div>
+                </li>
+
+                <!-- REST OF OPTIONS OF NAV  BAR -->
+                <li><a href="http://127.0.0.1:5500/form.html" target="_blank">place order</a> </li>
+                <!-- <li><a href="http://127.0.0.1:5500/lab2/cakes.html" target="_blank">place order</a> </li> CHANGE -->
+
+                <li><a href="http://127.0.0.1:5500/recipes.html" target="_blank"> recipes</a> </li>
+                <!-- <li><a href="http://127.0.0.1:5500/lab2/recipes.html" target="_blank"> recipes</a> </li> -->
+
+                <li><a href="http://127.0.0.1:5500/tools.html" target="_blank">baking essentials</a> </li>
+                <!-- <li><a href="http://127.0.0.1:5500/lab2/tools.html" target="_blank">baking tools</a> </li> -->
+
+                <li><a href="http://127.0.0.1:5500/journey.html" target="_blank">our  journey</a> </li>
+                <!-- <li><a href="http://127.0.0.1:5500/lab2/journey.html" target="_blank">our  journey</a> </li> -->
+
+                <div class="search">
+                    <!-- ICON ADDED - not working  -->
+                    <div class="iconn">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </div>
+
+                   <input type="text" name="search" id="search" placeholder="search this website" style="font-style: oblique" >
+                </div>
+
+                <div class="row">
+
+
+                    <!-- ADDING  TEXT -->
+                    <div class="col c1">
+                        <p class="h1">Baked with love</p> 
+                        <p class="para">  ~life is short, make it SWEET~</p>
+                    </div>
+                    <!-- ADDING SNAPS -->
+                    <div class="col">
+
+                        <div class="category p1">
+                            <!-- <a href="http://127.0.0.1:5500/lab2/cakes.html" class="t1" target="_blank">~Cakes~</a> -->
+                            <a href="http://127.0.0.1:5500/cakes.html" class="t1" >~Cakes~</a>
+                            <!-- <h5 class="t1">~Cakes~</h5> -->
+                        </div>
+
+                        <div class="category p2">
+                            <!-- <a href="http://127.0.0.1:5500/lab2/cupcakes.html" class="t1" target="_blank">~Cupcakes~</a> -->
+                            <a href="http://127.0.0.1:5500/cupcakes.html" class="t1" >~Cupcakes~</a>
+                            <!-- <h5 class="t1">~Cupcakes~</h5> -->
+                         
+                        </div>
+
+                        <div class="category p3">
+                            <!-- <a href="http://127.0.0.1:5500/lab2/donut&cookies.html" class="t1" target="_blank">~Donuts & Cookies~</a> -->
+                            <a href="http://127.0.0.1:5500/donut&cookies.html" class="t1" >~Donuts & Cookies~</a>
+
+                            <!-- <h5 class="t1"></h5> -->
+                            
+                        </div>
+
+                        <div class="category p4">
+                            <!-- <a href="http://127.0.0.1:5500/lab2/donutcakes.html" class="t1" target="_blank">~Donut cakes & Pastries~</a> -->
+                            <a href="http://127.0.0.1:5500/donutcakes.html" class="t1" >~Donut cakes & Pastries~</a>
+                            <!-- <h5 class="t1">~Donut cakes & Pastries~</h5> -->
+                           
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </ul>
+        </nav>
+    </header>
+
+    <!-- <footer class="footer"> -->
+        
+    <footer >
+       <!-- <div class="wrapper">
+           <div class="button but1">
+               <div class="icon">
+                   <i class="fab fa-instagram"></i>
+               </div>
+               <span>Instagram</span>
+           </div>
+       </div>
+
+    <div class="wrapper">
+        <div class="button but2">
+            <div class="icon">
+                <i class="fab fa-youtube"></i>
+            </div>
+            <span>Youtube</span>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <div class="button but3">
+            <div class="icon">
+                <i class="fab fa-whatsapp"></i>
+            </div>
+            <span>Whatsapp</span>
+        </div>
+    </div> -->
+<!-- ****************************************************************************************** -->
+    <ul>
+        <li>
+            <div class="button but1">
+                <div class="icon">
+                    <i class="fab fa-instagram"></i>
+                </div>
+                <!-- <span>Instagram</span> -->
+                <a href="https://www.instagram.com/lightupwithnoor__/?utm_medium=copy_link" target="_blank">Instagram</a>
+            </div>
+        </li>
+
+        <li><div class="button but2">
+            <div class="icon">
+                <i class="fab fa-youtube"></i>
+            </div>
+            <a href="https://www.youtube.com/channel/UCQd2s114Tz-y2RPlY3enFwg " target="_blank">Youtube</a>
+            <!-- <span>Youtube</span> -->
+
+        </div></li>
+
+        <li>
+            <div class="button but3">
+                <div class="icon">
+                    <i class="fab fa-whatsapp"></i>
+                </div>
+                <a href="http://127.0.0.1:5500/whatsapp.html" target="_blank">Whatsapp</a>
+                <!-- <a href="http://127.0.0.1:5500/lab2/whatsapp.html" target="_blank">Whatsapp</a> -->
+                <!-- <span>Whatsapp</span> -->
+            </div>
+        </li>
+    </ul>
+
+    
+    </footer>
+
+    
+    
+</body>
+</html>

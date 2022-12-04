@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript Form Validation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ephesis&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <style>
+         body{
+             width: 100%;
+            padding: 0px;
+            margin: 0px;
+            background-image: url('img/bg2.jpg');
+            background-blend-mode: overlay;
+
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+         .heading{
+            
+            color: rgb(212, 13, 112);
+            font-size: 45px;
+            text-align: center;
+            font-style: italic;
+            font-weight: bolder;
+            font-family: 'Ephesis';
+        }
+        .navbar{
+            margin-top: -29px;
+            background-color: #f7eeee;
+            height: 50px;
+        }
+        h4{
+            margin-left: 10px;
+        }
+        form{
+            background-color: white;
+            width: 450px;
+            padding: 50px 40px;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%;
+            border-radius: 8px;
+            box-shadow: 1px 1px 10px 2px rgb(172, 15, 93);
+
+        }
+
+        label{
+        font-weight: bold;
+        }
+
+        input{
+            display: block;
+            width: 100%;
+            margin-top: 5px;
+            padding-inline-end: 12px;
+            border-radius: 5px;
+           border: 1px solid black;
+        }
+       
+    </style>
+
+</head>
+
+<body>
+
+    <div class="navbar">
+        <p class="heading">~Online order~</p>
+    </div>
+
+    <form action="">
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Enter password here (8 digits minimum)">
+
+        <br>
+        
+        <label for="confirm-password">Password</label>
+        <input type="password" id="confrm-password" placeholder="Confirm password here">
+
+        <br>
+
+        <p id="message"> </p>
+
+        <input type="button" name="" 
+        onclick="checkPassword()"  value="VALIDATE">
+        
+
+    </form>
+
+    <script>
+        function checkPassword(){
+            let password = document.getElementById("password").value;
+
+            let cnfrmpassword = document.getElementById("confrm-password").value;
+
+            console.log(password, confrm-password );
+
+            let message = document.getElementById ("message");
+
+            if(password.length !=0){
+                if(password.length <8)
+                {
+                    message.textContent="Password should be of 8 digits minimum";
+
+                    message.style.backgroundColor="#ff4d4d";
+                }
+                else if(password == confrm-password)
+                {
+                    message.textContent = "Passwords Match!";
+
+                    message.style.backgroundColor="#3ae374"
+
+                }
+                else {
+                    message.textContent = ("Psswords did'nt match! Enter again"); 
+
+                    message.style.backgroundColor="#ff4d4d";
+
+                }
+            }
+
+            else{
+                alert("Password cant be empty");
+                message.textContent="";
+            }
+
+
+
+
+        }
+
+    </script>
+
+    
+
+</html>
